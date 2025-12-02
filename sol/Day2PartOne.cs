@@ -2,7 +2,7 @@ namespace AoC.Day2PartOne
 {
   using System.IO;
 
-  public class Day2
+  public class Day2PartOne
   {
 
     List<string> incorrectIds;
