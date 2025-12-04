@@ -3,6 +3,7 @@ using AoC.Day1;
 using AoC.Day2PartOne;
 using AoC.Day2PartTwo;
 using AoC.Day3;
+using AoC.Day4;
 
 using DemonKingSwarn.utils.fzf.Options;
 using DemonKingSwarn.utils.fzf.process;
@@ -17,6 +18,7 @@ public class Program
     Day2PartOne day2Part1 = new Day2PartOne();
     Day2PartTwo day2Part2 = new Day2PartTwo();
     Day3 day3 = new Day3();
+    Day4 day4 = new Day4();
     
     days = new List<string>
     {
@@ -24,6 +26,7 @@ public class Program
       "Day 2 Part 1",
       "Day 2 Part 2",
       "Day 3",
+      "Day 4"
     };
 
     var opts = FzfOptions.GetOpts(
@@ -79,6 +82,9 @@ public class Program
         break;
       case "Day 3":
         day3.Solve(inputFile);
+        break;
+      case "Day 4":
+        day4.Solve(inputFile);
         break;
     }
   }
